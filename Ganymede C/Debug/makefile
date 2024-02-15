@@ -60,8 +60,8 @@ all: main-build
 main-build: Ganymede\ C.elf secondary-outputs
 
 # Tool invocations
-Ganymede\ C.elf Ganymede\ C.map: $(OBJS) $(USER_OBJS) C:\Users\mergo\STM32CubeIDE\Ganymede\ C\Ganymede\ C\STM32L010F4PX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Ganymede C.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\mergo\STM32CubeIDE\Ganymede C\Ganymede C\STM32L010F4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ganymede C.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Ganymede\ C.elf Ganymede\ C.map: $(OBJS) $(USER_OBJS) C:\Users\mergo\STM32CubeIDE\Ganymede\ C\Ganymede-C\Ganymede-C-Control\Ganymede\ C\STM32L010F4PX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Ganymede C.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\mergo\STM32CubeIDE\Ganymede C\Ganymede-C\Ganymede-C-Control\Ganymede C\STM32L010F4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ganymede C.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

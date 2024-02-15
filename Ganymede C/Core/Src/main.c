@@ -238,7 +238,7 @@ static void MX_TIM2_Init(void)
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim2.Init.Period = 1000-1;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
   {
     Error_Handler();
@@ -477,17 +477,19 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 
 	//determineOccu();
+
 	HAL_TIM_Base_Stop(&htim2);
-	__HAL_TIM_SET_COUNTER(&htim2, 500);
+	__HAL_TIM_SET_COUNTER(&htim2, 1); // change counter timeout
 
 	if (htim->Instance == TIM2) { // Replace TIMx with your timer instance, e.g., TIM2
 	        // Clear the timer's interrupt flag to prevent re-entering this ISR due to the same event
 	        __HAL_TIM_CLEAR_IT(htim, TIM_IT_UPDATE);
 
 	        // Optionally reset the counter if needed (not always necessary if auto-reload is used)
-	        __HAL_TIM_SET_COUNTER(htim, 0);
+	        //__HAL_TIM_SET_COUNTER(htim, 0);
 
 	        // Here, you can add your code to handle what should happen at each timer interrupt
+	        HAL_GPIO_TogglePin(GPIOA,Green_Pin);
 
 	        // No explicit restart needed if the timer is configured in auto-reload mode (default for most basic timers)
 	    }

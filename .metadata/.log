@@ -1,0 +1,46 @@
+!SESSION 2024-02-06 12:38:43.083 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  C:\Users\mergo\STM32CubeIDE\Ganymede C\Ganymede-C\Ganymede-C-Control\Ganymede C\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\mergo\STM32CubeIDE\Ganymede C\Ganymede-C\Ganymede-C-Control\Ganymede C\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-06 12:39:02.270
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-06 12:39:02.281
+!MESSAGE Log4j2 initialized with config file C:\Users\mergo\STM32CubeIDE\Ganymede C\Ganymede-C\Ganymede-C-Control\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-06 12:39:06.015
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-06 12:39:12.415
+!MESSAGE Indexed 'Ganymede C' (24 sources, 141 headers) in 4.34 sec: 10,727 declarations; 49,975 references; 6 unresolved inclusions; 55 syntax errors; 909 unresolved names (1.5%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-02-07 13:04:18.658
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 5 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-02-07 13:04:18.659
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-02-07 13:04:18.661
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 5 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-02-07 13:04:18.662
+!MESSAGE Existing sessions are:
+!SESSION 2024-02-08 12:31:10.647 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-08 12:31:34.021
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-08 12:31:34.021
+!MESSAGE Log4j2 initialized with config file C:\Users\mergo\STM32CubeIDE\Ganymede C\Ganymede-C\Ganymede-C-Control\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-08 12:31:43.561
+!MESSAGE Started RMI Server, listening on port 41337

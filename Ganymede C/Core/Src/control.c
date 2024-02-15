@@ -135,7 +135,7 @@ unsigned char determineOccu(unsigned char VBit,unsigned char HBit, unsigned char
 		HB = 0;
 	}
 
- callNextFunction(Vbit,Hbit,Firstbit)
+ //callNextFunction(Vbit,Hbit,Firstbit)
 
 
  {

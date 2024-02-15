@@ -1,0 +1,10 @@
+13:14:47 **** Incremental Build of configuration Debug for project Ganymede C ****
+make -j16 all 
+arm-none-eabi-size  Ganymede\ C.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10860	     20	   1700	  12580	   3124	Ganymede C.elf
+Finished building: default.size.stdout
+ 
+
+13:14:47 Build Finished. 0 errors, 0 warnings. (took 274ms)
+
